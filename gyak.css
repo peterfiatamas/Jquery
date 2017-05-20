@@ -1,0 +1,24 @@
+.fejlec{
+    background-color: red ;
+    height: 50px;
+}
+body{
+    background-color: #ccccff;
+}
+.fo-menupont, .gordulo{
+    padding: 5px;
+    /*background-color:#ff9966;*/
+    background:  -moz-linear-gradient(top, #ff9999, #ff9900);
+    background: -webkit-linear-gradient(top, #ff9999, #ff9900);
+    display: inline;
+    float: left;
+    margin: 1px;
+    margin-top: 10px;
+    position: relative;
+    left: 500px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.gordulo{
+    display: none;
+}
