@@ -1,0 +1,16 @@
+#gomb{
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    background:  -moz-linear-gradient(top, #ff3333, #990033);
+    background: -webkit-linear-gradient(top, #ff3333, #990033);
+    color: white;
+}
+.udvozles{
+    border: 3px blue double;
+    background-color: #ccffff;
+}
+body{
+    background-color: #ccffff;
+}
