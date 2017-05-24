@@ -1,0 +1,12 @@
+#tablazat{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+table td{
+    border: 0;
+    border: 1px solid black;
+}
+table table td{
+    border: 0;
+}
