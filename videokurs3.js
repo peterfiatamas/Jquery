@@ -25,11 +25,15 @@
  $("tbody.tartalom > tr:odd ").css( "color", "white");
  alert('Supi');
  });*/
-$(document).ready(function () {
+/*$(document).ready(function () {
     $("tbody.tartalom > tr:even ").css("background", "yellow");
     $("tbody.tartalom > tr:odd ").css("background", "orange");
     $("tbody.tartalom > tr:odd ").css("color", "white");
     $('#gomb').click(function () {
         alert('Supi');
     });
+});*/
+$(document).ready(function(){
+    $("tbody.tartalom > tr:even").css('background', 'yellow');
+    $("tbody.tartalom > tr:odd").css('background', 'grey');
 });

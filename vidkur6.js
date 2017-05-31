@@ -16,3 +16,8 @@ function ellenorzes()
     return false;
 }
 
+$(document).ready(function () {
+    $('button').click(function () {
+        $('button').html("Next step");
+    });
+});

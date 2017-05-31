@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ürlapellenörzés</title>
+        <link href="urlapellenorzes.css" type="text/css" rel="stylesheet" />
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+        <script src="urlapellenorzes.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="" id="reg" method="post" onsubmit="return ellenorzes(); /*return false*/" id="reg">
+            <label for="nev">Név:</label><br/>
+            <input type="text" name="nev" /><br /><br />
+            <label for="email">Email:</label><br/>
+            <input type="text" name="email" /><br /><br />
+            <label for="password">Jelszó:</label><br/>
+            <input type="password" name="password" /><br /><br />
+            <input id="gomb" type="submit" value="Elküldés" />
+        </form>
+    </body>
+</html>
