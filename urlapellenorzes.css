@@ -1,3 +1,24 @@
+
+body{
+    background-image: url("http://komlomedia.hu/images/Hirkepek/6976/6976_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .hibas{
     border-color: red;
+}
+div{
+    background-color: orange;
+    padding: 20px;
+    background: rgba(	255, 153, 0, 0.5 );
+    display: none;
+}
+h1{
+    text-align: center;
+}
+#reg{
+    color: goldenrod;
+    background-color: #ccffff;
+    margin-right: 1277px;
 }
