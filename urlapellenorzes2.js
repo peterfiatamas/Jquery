@@ -1,6 +1,6 @@
 function ellenorzes()
 {
-    var nincshiba = true;
+    var nincshiba=true;
     var inputok=$('#reg input:text, #reg input:password')
     for(var i=0; i<inputok.length; i++)
     {
@@ -26,5 +26,5 @@ function gomb()
 });*/
 function nyom()
 {
-    $('#nyom').toggleClass('piri');
+   $('#nyom').toggleClass('piri');
 }
