@@ -1,0 +1,58 @@
+.bal{
+    width: 35%;
+    float: left;
+    background-color: orange;
+}
+.jobb{
+    width: 65%;
+    float: left;
+}
+#reg{
+    background-color: orange;
+    border-right: 1px solid black; 
+    text-align: center;
+    margin-top: 20px;
+}
+#tarolo{
+    background-color: #aad7d7;
+    padding-left: 10px;
+}
+.hiba{
+    border-color: red;
+}
+#uzenet{
+    background-color: pink;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#fej{
+    background: -moz-linear-gradient(top,  #F9081F 0%, #F2727E 100%); 
+    background-image: -webkit-linear-gradient(top,  #F9081F 0%, #F2727E 100%);
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid black;
+}
+#tartalom{
+    background: -moz-linear-gradient(top,  #F9081F 0%, #F2727E 100%); 
+    background-image: -webkit-linear-gradient(top,  #F9081F 0%, #F2727E 100%);
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid black;
+}
+.video{
+    margin-top: 20px;
+    position: relative;
+    left: 170px;
+}
+p{
+    padding: 20px;
+}
+#hucul{
+    margin-left: 170px;
+}

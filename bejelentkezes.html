@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head><link href="bejelentkezes.css" type="text/css" rel="stylesheet" />
+        <title>Bejelentkezés</title>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+        <script src="bejelentkezes.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="test">
+            <div class="bal">
+                <div id="fej">Regisztráció</div>
+                <form id="reg" method="post" onsubmit="return kuldheto();">
+                    <label for="nev">Név:</label><br />
+                    <input type="text" name="nev"><br />
+
+                    <label for="email">Email:</label><br />
+                    <input type="text" name="email"><br />
+
+                    <label for="telefon">Telefon:</label><br />
+                    <input type="text" name="telefon"><br />
+
+                    <label for="password">Password:</label><br />
+                    <input id="jelszo" type="password" name="password"><br /><br />
+
+                    <div id="uzenet"></div>
+
+                    <label for="checkbox">Mutasd a jelszót:</label>
+                    <input id="muti" type="checkbox" onclick="pipa()" name="checkbox"><br /><br />
+
+                    <input id="kuld" type="submit" value="Köldés">
+                    <input type="reset" value="Törlés">
+                </form>
+            </div>
+            <div class="jobb">
+                <div id="tartalom">Az oldal tartalma</div>
+                <div id="tarolo">
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZkJ_10EAgu4?ecver=1" frameborder="0" allowfullscreen></iframe><br />
+                    <div id="hucul">Hucul lovak</div>
+
+                    <P>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam, risus ac fringilla imperdiet, quam mi consectetur nisi, ut fringilla enim elit sed eros. Nullam ultrices dictum blandit. Ut pharetra justo vitae pharetra ultrices. Pellentesque mattis lorem lacus. In in tortor quis nunc rhoncus volutpat vel ut velit. Fusce varius tellus vitae ipsum tempor euismod in eget magna. Pellentesque non tortor metus. In hac habitasse platea dictumst. Aenean dapibus lectus vitae sapien cursus mattis. Aenean maximus ornare turpis. Phasellus tempor dui ut suscipit sagittis. Mauris congue pulvinar euismod.
+
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin quis est hendrerit neque cursus elementum. Maecenas feugiat nibh a mauris condimentum, sed ornare risus tristique. Quisque eleifend leo sodales, suscipit tortor ac, convallis eros. Cras non condimentum ligula. Quisque suscipit felis lacinia, vestibulum nulla id, volutpat nisl. Duis ut hendrerit nibh, nec mollis purus. Phasellus varius risus vel sapien varius volutpat. Cras fermentum eget eros dignissim luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec nec nulla sed erat aliquam pellentesque vel id sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+                        Maecenas tempor mi quis rutrum suscipit. Phasellus vitae eleifend mauris. Curabitur lobortis, diam quis rutrum vestibulum, lacus ipsum porttitor neque, nec pellentesque neque erat vitae sapien. Nullam velit metus, sollicitudin et euismod eget, rutrum et dui. In faucibus, dui eget lacinia lobortis, neque nibh varius urna, eget euismod nibh magna sed mi. Vivamus dignissim non tortor vel accumsan. Aliquam consectetur eros quis viverra congue.
+
+                        Pellentesque sit amet ligula ut lorem vestibulum vulputate. Aliquam erat volutpat. In scelerisque turpis in bibendum dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. In quis ultricies nisl. Aenean eu massa sollicitudin, faucibus diam non, dictum nunc. Vestibulum eget arcu ut erat condimentum sollicitudin ut nec ipsum. Proin cursus elit a purus tincidunt, tincidunt pharetra est aliquet. Aliquam erat volutpat.
+
+                        Donec ornare luctus elit ac vehicula. Integer porttitor enim et sapien gravida, sed commodo nisl tempus. Donec elit nisl, semper ac mi vitae, mollis dictum velit. Suspendisse viverra turpis ut ullamcorper congue. Sed ac diam arcu. Etiam aliquam rhoncus diam id fermentum. Duis tempor felis arcu, tempor vehicula orci interdum vitae. Donec ut lorem bibendum ligula sollicitudin blandit. Sed consequat gravida odio sit amet fringilla. In dapibus vulputate consequat. Curabitur turpis massa, tristique quis risus ut, gravida viverra nibh. Sed urna elit, aliquam eget porttitor ac, consequat sit amet lectus. Nam mattis dignissim condimentum. Aenean nec ipsum viverra, vehicula eros vel, egestas tortor. 
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

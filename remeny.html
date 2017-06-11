@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link href="remeny.css" type="text/css" rel="stylesheet" />
+        <title>Remény</title>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+        <script src="remeny.js"></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form id="reg" method="post" onsubmit="return figyelmeztetes();">
+            <label for="nev">Név:</label><br />
+            <input type="text" name="nev" value="qwert">
+            <br />
+            <label for="email">Email:</label><br />
+            <input type="text" name="email">
+            <br />
+            <label for="password">Password:</label><br />
+            <input id="jelszo" type="password" name="password">
+            <br /><br />
+            Mutasd a jelszót:
+            <input id="muti" type="checkbox" onclick="mutat()"><br /><br />
+            
+            <input type="submit" value="Küldés" onclick="gomb()">
+            <input type="reset" value="Törlés"> 
+        </form>
+    </body>
+</html>
