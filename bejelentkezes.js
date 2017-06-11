@@ -26,9 +26,11 @@ function kuldheto()
         {
             nincshiba = false;
             $(inputok[i]).addClass('hiba');
+            $('#ures').html('Nincs kitöltve egy mező!');
         } else
         {
             $(inputok[i]).removeClass('hiba');
+            $('#ures').html('');
         }
     }
     return nincshiba;
