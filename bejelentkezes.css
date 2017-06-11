@@ -18,7 +18,7 @@
     padding-left: 10px;
 }
 .hiba{
-    border-color: red;
+    border: 3px solid red;
 }
 #uzenet{
     background-color: pink;
@@ -58,4 +58,15 @@ p{
 }
 #ures{
     color: red;
+}
+#eltuno{
+    display: none;
+    background-color: red;
+    padding: 10px;
+    font-weight: bold;
+}
+#info{
+ width: 100px;   
+ background: -moz-linear-gradient(top,  #F9081F 0%, #F2727E 100%); 
+ border-radius: 10px;
 }
