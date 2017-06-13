@@ -50,3 +50,12 @@ function pipa()
         $('#uzenet').html('');
     }
 }
+function hozzaad()
+{
+    $('#mihez_ertesz .sor').last().after('<div class="sor"> Ehhez értek: <input type="text" name="kategoria[]" /><span id="torol" onclick="torol(this)">Töröl</span></div>');
+       
+}
+function torol(elem)
+{
+    $(elem).parent().remove();
+}

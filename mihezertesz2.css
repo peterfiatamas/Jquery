@@ -1,3 +1,6 @@
 #torles{
     cursor: pointer;
 }
+#torles:hover{
+    color: red;
+}
