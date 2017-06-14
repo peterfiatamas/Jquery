@@ -1,0 +1,17 @@
+#uzenet{
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    width: 1423px;
+    height: 899px;
+    margin: 0;
+}
+#ablak{
+    background-color: white;
+    position: fixed;
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    left: 501px;
+    top: 306px;
+}
