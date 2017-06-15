@@ -14,4 +14,24 @@
     border-radius: 10px;
     left: 501px;
     top: 306px;
+    box-shadow: 0 0 20px black;
+}
+#gomb{
+    color: black;
+    height: 25px;
+    width: 50px;
+    text-align: center;
+    background-color: orange;
+    margin: 10px auto 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-top: 5px;
+    font-weight: bold;
+}
+#gomb:active{
+   
+    background-color: #ff4e07;
+}
+#gomb:hover{
+    background-color: #ffb605;
 }
