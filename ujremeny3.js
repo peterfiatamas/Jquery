@@ -42,11 +42,11 @@ function pipa()
     if (muti.prop('checked'))
     {
         jelszo.prop('type', 'text');
-        $('#uzenet').html('<div style=" color:red; background: pink; border: 1px solid red; padding: 5px; width: 300px;">Figyelem!! A jelszó látható lesz!');
+        $('#uzenetszoveg').html('<div style=" color:red; background: pink; border: 1px solid red; padding: 5px; width: 300px;">Figyelem!! A jelszó látható lesz!');
     } else
     {
         jelszo.prop('type', 'password');
-        $('#uzenet').html('');
+        $('#uzenetszoveg').html('');
     }
 }
 /*Ennek a hibája az hogy egyszerre jelenik meg a jelszó és az üzenet!*/

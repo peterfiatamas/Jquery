@@ -1,11 +1,35 @@
 .hiba{
     border-color: red;
 }
-uzenet{/*Hogy lehet kiküszöbölni a div láthatóságát?*/
+#uzenetszoveget{/*Hogy lehet kiküszöbölni a div láthatóságát?*/
     color: red;
     font-weight: bold;
     border: 1px solid red;
     /*padding: 5px;*/
     width: 300px;
     background: pink;
+}
+#letrehoz{
+    background-color: gainsboro;
+    padding: 1px;
+    cursor: pointer;
+}
+#toroles{
+    cursor: pointer;
+}
+#sotet{
+    background-color: black;
+    opacity: 0.5;
+    width: 1423px;
+    height: 789px;
+    position: fixed;
+}
+#uzenet{
+    background-color: white;
+    padding: 4px;
+    position: fixed;
+    left:501.5px;
+    top: 334.5px;
+    width: 400px;
+    border-radius: 5px;
 }
