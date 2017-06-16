@@ -6,6 +6,7 @@ function uzenet()
     var szeles = Math.round($(window).innerWidth() - $('#ablak').innerWidth()) / 2;
     var magas = Math.round($(window).innerHeight() - $('#ablak').innerHeight()) / 2;
     /*alert(magas);*/
+   
 
 }
 function bezar()
@@ -14,7 +15,7 @@ function bezar()
     $('#ablak').remove();
 }
 /*$(document).ready(function () {
-    $('#gomb').on('click', function () {
-        $('#uzenet #ablak').remove();
+$('body').on('click', '#gomb', function () {
+        $('#uzenet, #ablak').remove();
     });
 });*/ /*Ebben mi a hiba?*/

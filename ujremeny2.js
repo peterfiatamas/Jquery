@@ -1,39 +1,40 @@
-function ellen()
-{
-    var hibatlan = true;
-    var inputok = $('#reg input:text, #reg input:password');
-    for (var i = 0; i < inputok.length; i++)
-    {
-        if ($(inputok[i]).val() == '')
+$(document).ready(function () {
+    $('#kuld').on('click', function () {
+        var nincshiba = true;
+        var inputok = $('#reg input:text, #reg input:password');
+        for (var i = 0; i < inputok.length; i++)
         {
-            hibatlan = false;
-            $(inputok[i]).addClass('hiba');
-            $('#ures').html('Minden mező kitöltése kötelező!');
-        } else
-        {
-            $(inputok[i]).removeClass('hiba');
-            $('#ures').html('');
+            if ($(inputok[i]).val() == '')
+            {
+                nincshiba = false;
+                $(inputok[i]).addClass('hiba');
+                $('#ures').text('Minden mező kitöltése kötelező!');
+            } else
+            {
+                $(inputok[i]).removeClass('hiba');
+                $('#ures').text('');
+            }
         }
-    }
-    return hibatlan;
-}
+        return nincshiba;
+    });
+});
 function pipa()
 {
-    jelszomezo = $('#jelszo');
-    jelolonegyzet = $('#mutasd');
-    if (jelolonegyzet.prop('checked'))
+    jelszo = $('#jelszo');
+    muti = $('#mutasd');
+    if (muti.prop('checked'))
     {
-        jelszomezo.prop('type', 'text');
-        $('#uzenetszoveg').html('Figyelem a jelszó látható!');
+        jelszo.prop('type', 'text');
+        $('#uzenetszoveg').text('A jelszó látható!');
     } else
     {
-        jelszomezo.prop('type', 'password');
-        $('#uzenetszoveg').html('');
+        jelszo.prop('type', 'password');
+        $('#uzenetszoveg').text('');
     }
 }
 function mihez()
 {
-    $('#sor').last().after('<div id="sor">Ehhez értek:<input type="text" name="kategoria[]"><span id="toroles" onclick="torol(this)">Törlés</span></div>');
+    $('#sor').last().after('<div id="sor">Ehhez értek:<input type="text" name="kategoria[]"><span id="torol" onclick="torol(this)">Törlés</span></div>');
 }
 function torol(elem)
 {
@@ -41,12 +42,9 @@ function torol(elem)
 }
 $(document).ready(function () {
     $('button').click(function () {
-        $('body').prepend('<div id="sotet" onclick="bezar()">grrgerg</div>');
-        $('#sotet').after('<div id="uzenet">Mi a Lorem Ipsum? Nem csak 5 évszázadot élt túl, de az elektronikus betûkészleteknél is változatlanul megmaradt. Az 1960-as években népszerûsítették a Lorem Ipsum részleteket magukbafoglaló Letraset lapokkal, és legutóbb softwarekkel mint például az Aldus Pagemaker.</div>')
-        /*var szeles = Math.round($(window).width() - $('#uzenet').innerWidth()) / 2;
-        var magas = Math.round($(window).innerHeight() - $('#uzenet').innerHeight()) / 2;
-        alert(szeles);*/
-        /* alert($(window).height());*/
+        $('body').prepend('<div id="sotet" onclick="bezar()">poipoi</div>');
+        $('#sotet').after('<div id="uzenet">Mi a Lorem Ipsum? Nem csak 5 évszázadot élt túl, de az elektronikus betûkészleteknél is változatlanul megmaradt. Az 1960-as években népszerûsítették a Lorem Ipsum részleteket magukbafoglaló Letraset lapokkal, és legutóbb softwarekkel mint például az Aldus Pagemaker.</div>');
+        $('#uzenet').append('<div id="gomb" onclick="bezar()">Ok</div>');
     });
 });
 function bezar()

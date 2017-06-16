@@ -14,7 +14,7 @@
     padding: 1px;
     cursor: pointer;
 }
-#toroles{
+#torol{
     cursor: pointer;
 }
 #sotet{
@@ -32,4 +32,21 @@
     top: 334.5px;
     width: 400px;
     border-radius: 5px;
+}
+#gomb{
+    margin: 10px auto 0 auto;
+    background-color: orange;
+    cursor: pointer;
+    padding-top: 5px;
+    font-weight: bold;  
+    height: 25px;
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+#gomb:hover{
+    background-color: #ff6600;
+}
+#gomb:active{
+    background-color: orange;
 }
