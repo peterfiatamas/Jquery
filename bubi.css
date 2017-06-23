@@ -1,0 +1,8 @@
+#buborek{
+    position: absolute;
+    background-color: #515151;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 5px 5px 5px black;
+}
