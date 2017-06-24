@@ -49,6 +49,6 @@ function le()
 }
 function fe(e)
 {
-    $('#buborek').css('left', e.pageX + 15);/*Mi az e?*/
-    $('#buborek').css('top', e.pageY + 20);
+    $('#buborek').css('left', e.pageX + 15);/*Mi az e?*//*event.pageX*/
+    $('#buborek').css('top', e.pageY + 20);/*A dokumentum szélétől mutatja az egér pozicióját.*/
 }
