@@ -1,83 +1,48 @@
-.testb{
-    float: left;
-    width: 40%;
-    background-color: #ccffff;
+#klik{
+    background-color: orange;
+    width: 200px;
+    height: 150px;
 }
-.testj{
-    float: left;
-    width: 60%;
-    background-color: #cccccc;
-}
-#reg{
-    text-align: center;
-}
-.hiba{
-    border-color: red;
-}
-#hibasurlap{
-    background-color: pink;
-    margin: 5px;
-    color: red;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-#jelolo{
-    background-color: pink;
-    color: red;
-    margin: 5px;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-#tarolo{
-    margin-left: 200px;
-}
-#elem{
-    background-color: #cccccc;
-    margin-right: 230px;
-    padding: 2px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 5px;
-}
-#torol{
-    cursor: pointer;
-}
-#sotet{
+#sotetablak{
     background-color: black;
     opacity: 0.5;
+    position: fixed;
     width: 100%;
     height: 100%;
-    position: fixed;
+
 }
-#uziablak{
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+#tarolo{
     position: fixed;
+    width: 100%;
+    height: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#gombi{
-    background-color: orange;
-    margin-left: 70px;
-    margin-right: 70px;
-    text-align: center;
-    margin-top: 50px;
-    border-radius: 5px;
-    box-shadow: 5px 5px #d3ccb1;
-    cursor: pointer;
-}
-#uzenet{
-    width: 300px;
-    height: 150px;
-    background-color: white;
+#soveg{
+    margin-top: 10px;
     padding: 10px;
+    background-color: white;
+    width: 200px;
+    height: 150px;
+    text-align: center;
     border-radius: 10px;
-    box-shadow: 5px 5px black;
+    box-shadow: 15px 15px 10px #222020;
+    user-select: none;
     -webkit-touch-callout: none; /*Nem jelöli ki az ablak szövegét mellékattintáskor.*/
     -webkit-user-select: none; 
     -khtml-user-select: none; 
     -moz-user-select: none; 
     -ms-user-select: none; 
-    user-select: none;
+    user-select: none; 
+}
+#gomb{
+    background-color: orange;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px #cc9900;
+    cursor: pointer;
 }

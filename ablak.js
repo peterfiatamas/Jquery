@@ -1,24 +1,26 @@
 $(document).ready(function(){
-    $('button').on('click', ablak);
-    $('body').on('click', '#gomb, #sotet', bezar);
-    $('#kuld').on('click', kuldes);
+    $('button').on('click', propup);
+    $('body').on('click', '#gomb', '#tarolo', torol);
+    $('#kuld').on('click', kuld);
 });
-function ablak()
+
+function propup()
 {
-    var sotetablak = '<div id="sotet">qwer</div>'
-    sotetablak += '<div id="tarolo"><div id="uziablak">A hiedelemmel ellentétben a Lorem Ipsum nem véletlenszerû szöveg. Gyökerei egy Kr. E. 45-ös latin irodalmi klasszikushoz nyúlnak. <div id="gomb">Ok</div></div></div>'
-    $('body').prepend(sotetablak);
-}       
-function bezar()
-{
-    $('#sotet').remove();
-    $('#tarolo').remove();
+    var sotet = '<div id="sotet">sss</div>';
+    sotet += '<div id="tarolo"><div id="soveg-tarolo">Tisztelt felhasználó! A lkjlkj jk oiuzt hjk n lkjhgzu mnk jkoiu jkliujhz.<div id="gomb">Ok</div></div></div>';
+    $('body').prepend(sotet);
 }
-function kuldes()
+function torol()
 {
-    var hibatlan=true;
-    var inputok=$('form input:text');
-    for (var i=0; i<inputok.length; i++)
+    $('#tarolo').remove();
+    $('#sotet').remove();
+}
+
+function kuld()
+{
+    var hibatlan = true;
+    var inputok = $('input:text');
+    for(var i=0; i<inputok.length; i++)
     {
         if($(inputok[i]).val()=='')
         {

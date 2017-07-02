@@ -1,8 +1,13 @@
-function hozzaad()
+$(document).ready(function(){
+    $('#mihez_ertesz #uj').on('click', kuld);
+    $('body').on('click', '#torol', torol);
+});
+
+function kuld()
 {
-    $('#mihez_ertesz .sor').last().after('<div class="sor"> Ehhez értek: <input type="text" name="kategoria[]" /><span onclick="torol(this)">Törlöm</span></div>');
+    $('.sor').last().after('<div class="sor"> Ehhez értek: <input type="text" name="kategoria[]" /><span id="torol" torol(this)>Törlés</span></div>');
 }
-function torol(elem)
+function torol()
 {
-    $(elem).parent().remove();
+    $(this).parent().remove();
 }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="reg.css" type="text/css" rel="stylesheet" />
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+        <script src="reg.js"></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form id="reg">
+            <label for="nev">Név:</label><br />
+            <input id="nev" type="text" name="nev" /><br />
+            
+            <label for="mail">Mail:</label><br />
+            <input type="text" name="mail" /><br />
+            
+            <label for="password">Password:</label><br />
+            <input id="jelszo" type="password" name="password" /><br /><br />
+            
+            <div id="lathato"></div><br />
+            
+            <label for="checkbox">Mutasd a jelszót:</label>
+            <input id="pipa" type="checkbox" name="checkbox"><br /><br />
+            
+            <div id="hibauzenet"></div><br />
+            
+            <input id="kuld" type="submit" value="Küld" />
+            <input type="reset" value="Töröl" /><br />
+        </form>
+    </body>
+</html>

@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <script type="text/javascript">
+        <!--<script type="text/javascript">
             //number
             var szam = 10;
             document.write('ez egy változó: ' + szam);
@@ -63,10 +63,52 @@
             document.write(szam1+ '<br />');
             var szam2;
             szam2 = szam1++;
-            document.write('szam1:' + szam1+ '<br />' + 'szam2: ' + szam2);
+            document.write('szam1:' + szam1+ '<br />' + 'szam2: ' + szam2 +'<br />');
+            var szam = 10;
+            var szam2 = 3;
+            szam += szam2;
+            document.write(szam);
+            
          
             
             
+        </script>-->
+        <!-- <script type="text/javascript">
+             var szam = 9;
+             if (szam < 9)
+             {
+                 document.write('A szám értéke kissebb mint 9.');
+ 
+             } else if (szam == 9)
+             {
+                 document.write('A szám értéke egyenlő 9.');
+             } else
+             {
+                 document.write('a Szám nagyobb 9.');
+             }
+         </script>-->
+        <script type="text/javascript">
+            var jegy = parseInt(prompt('add meg a jegyet'));
+            switch (jegy)
+            {
+                case 1:
+                    document.write('elégtelen');
+                    break;
+                case 2:
+                    document.write('elégséges');
+                    break;
+                case 3:
+                    document.write('közepes');
+                    break;
+                case 4:
+                    document.write('jó');
+                    break;
+                case 5:
+                    document.write('jeles');
+                    break;
+                default:
+                    document.write('nem jegy');
+            }
         </script>
     </body>
 </html>

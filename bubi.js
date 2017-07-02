@@ -1,54 +1,28 @@
-/*$(document).ready(function () {
- $('a').each('hover', buborek);
- $(this).mouseenter(buborek);
- $(this).mouseleave(torol);
- 
- });
- function buborek()
- {
- $(this).after('<div id="buborek">qqqq</div>');
- }
- function torol()
- {
- $('#buborek').remove()
- }*/
-/*$(document).ready(function () {
-    $('a').each(function () {
-        $(this).mouseenter(function () {
-            title = $(this).attr('title');
-            $(this).removeAttr('title');
-            $(this).after('<div id="buborek">' + title + '</div>');
-        });
-        $(this).mouseleave(function () {
-            $('#buborek').remove();
-            $(this).attr('title', title);
-        });
-        $(this).mousemove(function (e) {
-            $('#buborek').css('left', e.pageX + 15);
-            $('#buborek').css('top', e.pageY + 20);
-        });
-    });
-});*/
 $(document).ready(function () {
     $('a').each(function () {
-        $(this).mouseenter(fole);
+        $(this).mouseenter(fel);
         $(this).mouseleave(le);
-        $(this).mousemove(fe);
+        $(this).mousemove(moz);
     });
 });
-function fole()
+function fel()
 {
-    title = $(this).attr('title');
+    var felirat = $(this).attr('title');
     $(this).removeAttr('title');
-    $(this).after('<div id="buborek">' +title+ '</div>');
+    $(this).after('<div id="bubi">' +felirat+ '</div>');
 }
 function le()
 {
-    $('#buborek').remove();
-    $(this).attr('title', title);
+    var felirat = $('#bubi').text();
+    $('#bubi').remove();
+    $(this).attr('title', felirat);
 }
-function fe(e)
+function moz(e)
 {
-    $('#buborek').css('left', e.pageX + 15);/*Mi az e?*//*event.pageX*/
-    $('#buborek').css('top', e.pageY + 20);/*A dokumentum szélétől mutatja az egér pozicióját.*/
+    $('#bubi').css('left', e.pageX + 15);
+    $('#bubi').css('top', e.pageY + 20);
 }
+
+
+
+
