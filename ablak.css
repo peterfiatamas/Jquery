@@ -1,49 +1,58 @@
-#sotet{
+#sotetablak{
     background-color: black;
-    opacity: 0.5;
-    position: fixed;
     width: 100%;
     height: 100%;
-}
-#soveg-tarolo{
-    padding: 20px;
-    background-color: white;
     position: fixed;
-    box-shadow: 5px 5px black;
+    opacity: 0.5;
+}
+#tarolo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+#szovegablak{
+    background-color: white;
     width: 250px;
-    height: 200px;
+    height: 180px;
+    position: fixed;
+    padding: 20px;
     text-align: center;
-    user-select: none;
-    -webkit-touch-callout: none; 
-    -webkit-user-select: none; 
-    -khtml-user-select: none; 
-    -moz-user-select: none; 
-    -ms-user-select: none; 
-    user-select: none;
+    box-shadow: 5px 5px black;
 }
 #gomb{
     background-color: orange;
+    margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 50px;
-    cursor: pointer;
     border-radius: 10px;
-    box-shadow: 5px 5px gray;
+    box-shadow: 5px 5px black;
+    text-align: center;
+    cursor: pointer;
 }
-#gomb:hover{
-    background-color: #ff6600;
+
+
+
+
+#klik{
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
 }
-#tarolo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    height: 100%;
+#klik:active{
+    background-color: red;
 }
-.hiba{
-    border-color: red;
+#klik:hover{
+    background-color: #ffcc00;
 }
-#uzenet{
-    color: red;
+#adat{
+    display: none;
+    padding: 20px;
+    background-color: pink;
+}
+button:hover{
+    background-color: yellow;
 }

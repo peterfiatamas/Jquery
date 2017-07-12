@@ -1,51 +1,25 @@
-/*$(document).ready(function(){
- $('a').each(function(){
- $(this).mouseenter(fel);
- $(this).mouseleave(le);
- $(this).mousemove(moz);
- });
- });
- 
- function fel()
- {
- var title= $(this).attr('title');
- $(this).removeAttr('title');
- $(this).after('<div id="bubi">'+title+'</div>');
- }
- function le()
- {
- var title = $('#bubi').text();
- $('#bubi').remove();
- $(this).attr('title', title);
- }
- function moz(e)
- {
- $('#bubi').css('left', e.pageX+20);
- $('#bubi').css('top', e.pageY+15);
- }*/
-
-$(document).ready(function () {
-    $('a').each(function () {
-        $(this).mouseenter(fel);
-        $(this).mouseleave(le);
-        $(this).mousemove(mo);
+$(document).ready(function(){
+    $('a').each(function(){
+        $(this).mouseenter( fole);
+        $(this).mouseleave( le);
+        $(this).mousemove( moz);
     });
 });
 
-function fel()
+function fole()
 {
-    var felirat = $(this).attr('title');
+    var title = $(this).attr('title');
     $(this).removeAttr('title');
-    $(this).after('<div id="bubi">'+felirat+'</div>');
+    $(this).after('<div id="buborek">'+title+'</div>');
 }
 function le()
 {
-    var felirat=$('#bubi').text();
-    $('#bubi').remove();
-    $(this).attr('title', felirat);
+ var title = $('#buborek').text();  
+ $('#buborek').remove();
+ $(this).attr('title', title);
 }
-function mo(e)
+function moz(e)
 {
-    $('#bubi').css('left', e.pageX+20);
-    $('#bubi').css('top', e.pageY+15);
+    $('#buborek').css('left', e.pageX+20);
+    $('#buborek').css('top', e.pageY+15);
 }

@@ -1,37 +1,33 @@
 $(document).ready(function(){
-    $('button').on('click', propup);
-    $('body').on('click', '#gomb', '#tarolo', torol);
-    $('#kuld').on('click', kuld);
+    $('body').on('click','#klik', ablak);
+    $('body').on('click','#tarolo','#gomb', torol);
+    $('button').on('click', gord);
 });
 
-function propup()
+function ablak()
 {
-    var sotet = '<div id="sotet">sss</div>';
-    sotet += '<div id="tarolo"><div id="soveg-tarolo">Tisztelt felhasználó! A lkjlkj jk oiuzt hjk n lkjhgzu mnk jkoiu jkliujhz.<div id="gomb">Ok</div></div></div>';
-    $('body').prepend(sotet);
-}
-function torol()
-{
-    $('#tarolo').remove();
-    $('#sotet').remove();
+    var elsoablak = '<div id="sotetablak">sss</div>';
+    elsoablak += '<div id="tarolo">ff<div id="szovegablak">Figyelem aki rossz azt megverem!<div id="gomb">Ok</div></div></div>';
+    $('body').prepend(elsoablak);
 }
 
-function kuld()
+function torol()
 {
-    var hibatlan = true;
-    var inputok = $('input:text');
-    for(var i=0; i<inputok.length; i++)
-    {
-        if($(inputok[i]).val()=='')
-        {
-            hibatlan=false;
-            $(inputok[i]).addClass('hiba');
-            $('#uzenet').text('Minden mezőt ki kell tölteni!');
-        }else
-        {
-            $(inputok[i]).removeClass('hiba');
-            $('#uzenet').text('');
-        }
-    }
-    return hibatlan;
+    $('#sotetablak').remove();
+    $('#tarolo').remove();
 }
+
+function gord()
+{
+    if($('#adat').is(':hidden'))
+    {
+        $('#adat').slideDown();
+    }else
+    {
+        $('#adat').slideUp();
+    }
+}
+/*function gord()
+{
+    $('#adat').slideToggle();
+}*/

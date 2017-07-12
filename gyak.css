@@ -1,10 +1,5 @@
-p{
-    padding: 20px;
-}
-#bubi{
-  position: absolute;
-  padding: 5px;
-  background-color: orange;
-  border-radius: 8px;
-  color: blue;
+#buborek{
+    background-image: -webkit-linear-gradient(top, #F7A5A5, #F90808);
+    position: absolute;
+    padding: 5px;
 }
