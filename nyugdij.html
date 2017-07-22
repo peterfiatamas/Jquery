@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="nyugdij.css" type="text/css" rel="stylesheet">
+        <title>Nyugdíjas vagy</title>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+        <script src="nyugdij.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script type="text/javascript">
+            var logikai = true;
+            while (logikai) {
+                var szuletesiEv = parseInt(window.prompt('Kérem a születési éved!'));
+                if (!window.confirm('Biztos, hogy' + szuletesiEv + '-ban születtél?')) {
+                    continue;
+                }
+                if (szuletesiEv > 2011 || szuletesiEv < 1900 || isNaN(szuletesiEv)) {
+                    window.alert('Írd be a helyes születési éved!');
+                } else
+                {
+                    if (2011 - szuletesiEv >= 62)
+                    {
+                        document.write('Nyugdíjas vagy.');
+                    } else
+                    {
+                        document.write('Nem vagy nyugdíjas.');
+                    }
+                    logikai = fals;
+                }
+            }
+        </script>
+    </body>
+</html>

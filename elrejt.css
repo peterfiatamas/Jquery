@@ -1,0 +1,15 @@
+h2{
+    background-color: red;
+    margin-right: 1230px;
+    box-shadow: 5px 5px black;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.valasz{
+    padding: 10px;
+    display: none;
+    background-color: buttonface;margin-right: 1000px;
+    border-radius: 10px;
+    cursor: context-menu;
+}

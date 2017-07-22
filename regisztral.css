@@ -1,0 +1,24 @@
+p{
+    display: none;
+}
+.hiba{
+    border-color: red;
+}
+#ures{
+    color: red;
+    font-weight: bold;
+}
+#uzenetszoveg{
+    color: red;
+    font-weight: bold;
+}
+#letrehoz{
+    background-color: gray;
+    color: white;
+    padding: 2px;
+    cursor: pointer;
+}
+#torol{
+    cursor: pointer;
+    background-color: yellow;
+}

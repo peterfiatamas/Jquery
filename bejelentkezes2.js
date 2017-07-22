@@ -44,3 +44,19 @@ function torol(elem)
 {
     $(elem).parent().remove();
 }
+$(document).ready(function(){
+    $('#meglepi').on('click', gord);
+});
+
+function gord()
+{
+    if($('#szoveg').is(':visible'))
+    {
+        $('#szoveg').animate({fontSize:'10px'},200).slideUp();
+        $('#meglepi').animate({width:'100px'});
+    }else
+    {
+        $('#szoveg').animate({fontSize:'15px'}).slideDown();
+        $('#meglepi').animate({width:'150px'});
+    }
+}

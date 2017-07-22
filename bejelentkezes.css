@@ -85,3 +85,12 @@ p{
 #torol{
     cursor: pointer;
 }
+#szoveg{
+    padding: 10px;
+    margin: 10px;
+    display: none;
+}
+#meglepi{
+    margin-left: 25px;
+    background-color: yellow;
+}

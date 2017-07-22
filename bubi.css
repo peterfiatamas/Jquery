@@ -1,8 +1,7 @@
 #bubi{
     position: absolute;
-    background-color: orange;
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
-    box-shadow: 5px 5px 5px black;
+    border-radius: 20px;
+    padding: 2px;
+    box-shadow: 4px 4px black;
+    background-image: -moz-linear-gradient(bottom, #FFFF00, #FFFFCC);
 }

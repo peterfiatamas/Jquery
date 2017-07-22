@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="ujremeny.css" type="text/css" rel="stylesheet" />
+        <link href="regisztral.css" type="text/css" rel="stylesheet" />
         <title>Új remény</title>
         <meta charset="UTF-8">
         <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-        <script src="ujremeny2.js"></script>
+        <script type="text/javascript" src="jquery-ui.min.js"></script>
+        <script src="regisztral.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <form id="reg" method="post" onsubmit="return ellen();">
+        <form id="reg" method="post">
             <label for="nev">Név:</label><br />
             <input id="nev" type="text" name="nev"><br />
 
@@ -25,7 +26,7 @@
             <div id="uzenetszoveg"></div><br />
 
             <label for="checkbox">Mutasd a jelszót:</label>
-            <input id="mutasd" onclick="pipa()" type="checkbox" name="checkbox"><br /><br />
+            <input id="mutasd"  type="checkbox" name="checkbox"><br /><br />
 
             <div id="ures"></div><br />
 
@@ -37,12 +38,12 @@
                 Mihez értesz?<br /><br />
                 <div id="sor">Ehhez értek:<input type="text" name="kategoria[]"></div><br />
 
-                <span id="letrehoz" onclick="mihez()">Új elem létrehozása</span>    
+                <span id="letrehoz" >Új elem létrehozása</span>    
                 <input type="submit" value="Küldés">
 
             </div>
         </form><br />
-        <button>Ablak</button>
+        <button>Ablak<br />Nyomd meg</button>
         <p>
             Mi a Lorem Ipsum?
 

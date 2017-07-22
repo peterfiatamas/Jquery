@@ -1,58 +1,58 @@
-#sotetablak{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    opacity: 0.5;
-}
-#tarolo{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-}
-#szovegablak{
-    background-color: white;
-    width: 250px;
-    height: 180px;
-    position: fixed;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 5px 5px black;
-}
-#gomb{
-    background-color: orange;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 10px;
-    box-shadow: 5px 5px black;
-    text-align: center;
-    cursor: pointer;
-}
-
-
-
-
 #klik{
     background-color: orange;
     width: 200px;
     height: 200px;
     cursor: pointer;
-}
-#klik:active{
-    background-color: red;
+    border-radius: 10px;
 }
 #klik:hover{
     background-color: #ffcc00;
 }
+#sotet{
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+#tarolo{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#feherablak{
+    background-color: white;
+    position: fixed;
+    width: 200px;
+    height: 150px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 4px 4px black;
+    border-radius: 10px;
+}
+#gomb{
+    background-color: orchid;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+    margin-top: 70px;
+    border-radius: 15px;
+    box-shadow: 5px 5px black;
+}
+#gomb:active{
+    background-color:#cb34c5;
+}
 #adat{
     display: none;
-    padding: 20px;
-    background-color: pink;
 }
-button:hover{
-    background-color: yellow;
+
+body{
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none; 
 }

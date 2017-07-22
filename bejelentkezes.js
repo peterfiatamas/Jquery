@@ -16,6 +16,8 @@
  return nincshiba;
  });
  });*/
+
+
 function kuldheto()
 {
     var nincshiba = true;

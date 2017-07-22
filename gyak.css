@@ -1,5 +1,6 @@
-#buborek{
-    background-image: -webkit-linear-gradient(top, #F7A5A5, #F90808);
+#bubi{
     position: absolute;
     padding: 5px;
+    background-image: -webkit-linear-gradient(top, #D4F9D3, #0AFA04);
+    border-radius: 10px;
 }

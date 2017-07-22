@@ -1,33 +1,28 @@
 $(document).ready(function(){
-    $('body').on('click','#klik', ablak);
-    $('body').on('click','#tarolo','#gomb', torol);
+    $('#klik').on('click', pop);
+    $('body').on('click', '#tarolo', '#gomb', torol);
     $('button').on('click', gord);
 });
 
-function ablak()
+function pop()
 {
-    var elsoablak = '<div id="sotetablak">sss</div>';
-    elsoablak += '<div id="tarolo">ff<div id="szovegablak">Figyelem aki rossz azt megverem!<div id="gomb">Ok</div></div></div>';
-    $('body').prepend(elsoablak);
+    var ablak = '<div id="sotet">ss</div>';
+    ablak += '<div id="tarolo"><div id="feherablak">Figyelem fontos információ a felhasználó részére!<div id="gomb">Ok</div></div></div>';
+    $('body').prepend(ablak);
 }
 
 function torol()
 {
-    $('#sotetablak').remove();
+    $('#sotet').remove();
     $('#tarolo').remove();
 }
 
-function gord()
-{
-    if($('#adat').is(':hidden'))
+function gord(){
+    if($('#adat').is(':visible'))
     {
-        $('#adat').slideDown();
+        $('#adat').effect('puff');
     }else
     {
-        $('#adat').slideUp();
+        $('#adat').slideDown();
     }
 }
-/*function gord()
-{
-    $('#adat').slideToggle();
-}*/
