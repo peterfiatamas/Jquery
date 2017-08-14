@@ -1,14 +1,15 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $('#klik').on('click', pop);
-    $('body').on('click', '#tarolo', '#gomb', torol);
-    $('button').on('click', gord);
+    $('body').on('click', '#gomb', torol);
+    $('#info').on('click', gord);
 });
+
 
 function pop()
 {
-    var ablak = '<div id="sotet">ss</div>';
-    ablak += '<div id="tarolo"><div id="feherablak">Figyelem fontos információ a felhasználó részére!<div id="gomb">Ok</div></div></div>';
-    $('body').prepend(ablak);
+    var sotetablak = '<div id="sotet">ss</div>';
+    sotetablak += '<div id="tarolo"><div id="feheruziablak"> Figyelem! Ha kjs njsue kslk n sjncee kjamxd. Mahby kj mnsjd oie mlksui.<div id="gomb">Ok!</div></div></div>';
+    $('body').prepend(sotetablak);
 }
 
 function torol()
@@ -17,12 +18,15 @@ function torol()
     $('#tarolo').remove();
 }
 
-function gord(){
-    if($('#adat').is(':visible'))
+function gord()
+{
+    if ($('#adat').is(':visible'))
     {
-        $('#adat').effect('puff');
-    }else
+        $('#adat').toggle('bounce', 500);
+        $('#tartalom').text('Rejtett tartalom');
+    } else
     {
         $('#adat').slideDown();
+        $('#tartalom').remove();
     }
 }

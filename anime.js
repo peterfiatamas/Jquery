@@ -11,7 +11,7 @@ function anim()
     /* $('div').animate({width:'400px'}, 500).animate({height:'400px'}, 500);*/
     /*$('div').animate({width: '200px', backgroundColor: 'red'},
      {start: function(){$('body').prepend('Mozi')}, complete: function(){$('body').append('Film')}}, 1000);*/
-    $('div').animate({backgroundColor: 'red'}, 500).animate({backgroundColor: 'orange'}, 500);/*Miért tűnik el!!!!!*/
+  //  $('div').animate({backgroundColor: 'red'}, 500).animate({backgroundColor: 'orange'}, 500);/*Miért tűnik el!!!!!*/
 }
 function ind()
 {

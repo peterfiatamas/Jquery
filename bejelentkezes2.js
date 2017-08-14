@@ -1,62 +1,74 @@
-function kuldheto()
+$(document).ready(function () {
+    $('#kuld').on('click', reg);
+    $('#muti').on('click', pipa);
+    $('#info').on('click', gord);
+    $('#hozzaad').on('click', mihez);
+    $('body').on('click', '#torol', torol);
+    $('body').on('click', '#meglepi', leg );
+});
+
+function reg()
 {
-    var hibatlan=true;
-    var inputok=$('#reg input:text, #reg input:password');
-    for(var i=0; i<inputok.length; i++)
+    var nincshiba = true;
+    var inputok = $('#reg input:text, #reg input:password');
+    for (var i = 0; i < inputok.length; i++)
     {
-        if($(inputok[i]).val()=='')
+        if ($(inputok[i]).val() == '')
         {
-            hibatlan=false;
+            nincshiba = false;
             $(inputok[i]).addClass('hiba');
-            $('#uzenet').html('Figyelem minden mezőt ki kell tölteni!');
-        }else
+            $('#ures').text('Minden mezőt ki kell tölteni!');
+        } else
         {
             $(inputok[i]).removeClass('hiba');
-            $('#uzenet').html('');
+            $('#ures').text('');
         }
     }
-    return hibatlan;
+    return nincshiba;
 }
+
 function pipa()
 {
-    jelszo=$('#jelszo');
-    mutasd=$('#muti');
-    if(mutasd.prop('checked'))
+    var jelszo = $('#jelszo');
+    var muti = $('#muti');
+    if (muti.prop('checked'))
     {
         jelszo.prop('type', 'text');
-        $('#ures').html('Figyelem a jelszó látható!');
-    }else
+    } else
     {
         jelszo.prop('type', 'password');
-        $('#ures').html('');
     }
 }
-$(document).ready(function(){
-   $('#info').click(function(){
-       $('#eltuno').slideToggle('fast');
-   }); 
-});
-function hozzaad()
-{
-    $('#mihez_ertesz .sor').last().after('<div class="sor"> Ehhez értek: <input type="text" name="kategoria[]" /><span id="torol" onclick="torol(this)">Törlöm</span></div>');
-}
-function torol(elem)
-{
-    $(elem).parent().remove();
-}
-$(document).ready(function(){
-    $('#meglepi').on('click', gord);
-});
 
 function gord()
 {
-    if($('#szoveg').is(':visible'))
+    if ($('#eltuno').is(':visible'))
     {
-        $('#szoveg').animate({fontSize:'10px'},200).slideUp();
-        $('#meglepi').animate({width:'100px'});
-    }else
+        $('#eltuno').slideUp();
+    } else
     {
-        $('#szoveg').animate({fontSize:'15px'}).slideDown();
-        $('#meglepi').animate({width:'150px'});
+        $('#eltuno').slideDown();
     }
 }
+
+function mihez()
+{
+    $('.sor').last().after('<div class="sor"> Ehhez értek: <input type="text" name="kategoria[]" /><spam id="torol"  torol(this)>Törlés</spam></div>');
+}
+
+function torol()
+{
+    $(this).parent().remove();
+}
+
+function leg()
+{
+    if ($('#szoveg').is(':visible'))
+    {
+        $('#szoveg').slideUp();
+    } else
+    {
+        $('#szoveg').slideDown();
+    }
+}
+

@@ -10,14 +10,14 @@ function fel()
 {
     var felirat = $(this).attr('title');
     $(this).removeAttr('title');
-    $(this).after('<div id="bubi">'+felirat+'</div>');
+    $(this).after('<div id="bubi">'+ felirat +'</div>');
 }
 
 function le()
 {
-    var bubifelirat = $('#bubi').text();
-    $("#bubi").remove();
-    $(this).attr('title', bubifelirat);
+    var bubi = $('#bubi').text();
+    $('#bubi').remove();
+    $(this).attr('title', bubi);
 }
 
 function moz(e)

@@ -1,12 +1,13 @@
+body{
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none; 
+}
 #klik{
-    background-color: orange;
+    background-color: orangered;
     width: 200px;
     height: 200px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-#klik:hover{
-    background-color: #ffcc00;
 }
 #sotet{
     background-color: black;
@@ -23,36 +24,33 @@
     justify-content: center;
     align-items: center;
 }
-#feherablak{
+#feheruziablak{
     background-color: white;
-    position: fixed;
     width: 200px;
     height: 150px;
+    position: fixed;
     padding: 15px;
-    margin-top: 20px;
-    box-shadow: 4px 4px black;
     border-radius: 10px;
+    box-shadow: 4px 4px black;
+    text-align: center;
 }
 #gomb{
-    background-color: orchid;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 40px;
+    background-color: orange;
+    border-radius: 10px;
     text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    box-shadow: 3px 3px black;
     cursor: pointer;
-    margin-top: 70px;
-    border-radius: 15px;
-    box-shadow: 5px 5px black;
 }
 #gomb:active{
-    background-color:#cb34c5;
+    background-color: red;
 }
 #adat{
     display: none;
+    padding: 20px;
 }
-
-body{
-    -webkit-user-select: none;  /* Chrome all / Safari all */
-    -moz-user-select: none;     /* Firefox all */
-    -ms-user-select: none;      /* IE 10+ */
-    user-select: none; 
+#info:active{
+    background-color: red;
 }
